@@ -1,6 +1,6 @@
 import time, re
 from sys import argv
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+from telegram.ext import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import (
     CallbackContext,
     CallbackQueryHandler,
