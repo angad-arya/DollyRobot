@@ -1,6 +1,6 @@
 import time, re
 from sys import argv
-from telegram.ext import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import (
     CallbackContext,
     CallbackQueryHandler,
@@ -244,7 +244,7 @@ def main():
     user_help_callback_handler = CallbackQueryHandler(user_help_button, pattern=r"user_.*", run_async=True)
     tools_help_callback_handler = CallbackQueryHandler(tools_help_button, pattern=r"tools_.*", run_async=True)
 
-    about_callback_handler = CallbackQueryHandler(yone_about_callback, pattern=r"yone_", run_async=True)
+    about_callback_handler = CallbackQueryHandler(dolly_about_callback, pattern=r"dolly_", run_async=True)
 
     settings_handler = CommandHandler("settings", get_settings, run_async=True)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_", run_async=True)
@@ -288,3 +288,4 @@ if __name__ == "__main__":
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
     telethn.start(bot_token=TOKEN)
     main()
+n()
