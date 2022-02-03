@@ -1,2 +1,3 @@
-worker: python3 -m app.py
+worker: python3 -m Dolly
 ps:scale worker=1
+
