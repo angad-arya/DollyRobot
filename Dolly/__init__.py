@@ -56,7 +56,9 @@ if ENV:
     DB_URI = os.environ.get("DATABASE_URL")
     WORKERS = int(os.environ.get("WORKERS", 8))
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
+    ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
+    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
     EVENT_LOGS = os.environ.get("EVENT_LOGS", None)
     JOIN_LOGGER = os.environ.get("JOIN_LOGGER", None)
@@ -100,8 +102,5 @@ else:
 
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethon = TelegramClient(MemorySession(), API_ID, API_HASH)
+telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
 dispatcher = updater.dispatcher
-
-r
-
