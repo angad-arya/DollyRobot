@@ -1,2 +1,1 @@
-web: python3 -m app.py
-
+web:python3 -m __main__.py
