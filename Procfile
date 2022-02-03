@@ -1,1 +1,1 @@
-web:python3 -m __main__.py
+worker:python3 -m __main__.py
