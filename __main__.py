@@ -268,12 +268,4 @@ n()
 
 
 if __name__ == "__main__":
-    
-    main()("Successfully loaded modules: " + str(ALL_MODULES))
-    telethn.start(bot_token=TOKEN)
-    main()
-n()
-)
-    telethn.start(bot_token=TOKEN)
-    main()
-n()
+     main()
