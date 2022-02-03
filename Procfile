@@ -1,3 +1,2 @@
-worker: python3 -m Dolly
-ps:scale worker=1
+web: python3 -m app.py
 
