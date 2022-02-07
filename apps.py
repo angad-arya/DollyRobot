@@ -1,4 +1,4 @@
-from telegram.ext import Updater, Dispatcher
+from telegram.ext import Updater
 from telegram.ext import CommandHandler, MessageHandler, Filter
 import os
 TOKEN = os.environ.get("TELEGRAM_ID")
