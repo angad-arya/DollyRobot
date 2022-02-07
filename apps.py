@@ -34,6 +34,6 @@ def main():
                           url_path=TOKEN, 
                           webhook_url = "https://alice-once.herokuapp.com/"+TOKEN)
     Updater.idle()
-if __name__ == '__main__':
+if  __name__ == '__main__':
     main()
 
